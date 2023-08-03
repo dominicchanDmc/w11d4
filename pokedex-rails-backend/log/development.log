@@ -18953,3 +18953,536 @@ FOREIGN KEY ("pokemon_id")
   [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
   [1m[36mPokeMove Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "poke_moves" WHERE "poke_moves"."move_id" = $1 AND "poke_moves"."pokemon_id" = $2 LIMIT $3[0m  [["move_id", 1], ["pokemon_id", 1], ["LIMIT", 1]]
   [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for 127.0.0.1 at 2023-08-03 15:17:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 526)
+Completed 200 OK in 879ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 948953)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-03 15:19:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 526)
+Completed 200 OK in 717ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 948945)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-03 15:19:14 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 278)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1158)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-03 15:19:33 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 223)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-03 15:19:38 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 198)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-03 15:19:43 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dominic/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 193)
+
+
+Started GET "/pokemon" for 127.0.0.1 at 2023-08-03 15:19:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pokemon"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-08-03 15:19:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/pokemons" for 127.0.0.1 at 2023-08-03 15:20:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pokemons"):
+  
+Started GET "/api/pokemons" for 127.0.0.1 at 2023-08-03 15:20:34 -0700
+
+ActionController::RoutingError - uninitialized constant Api::PokemonsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::PokemonController
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/480f6847fcd0fb7b/variables" for 127.0.0.1 at 2023-08-03 15:20:34 -0700
+Started GET "/api/pokemons" for 127.0.0.1 at 2023-08-03 15:20:54 -0700
+
+ActionController::RoutingError - uninitialized constant Api::PokemonsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::PokemonController
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/f6d58ae0d93bca21/variables" for 127.0.0.1 at 2023-08-03 15:20:54 -0700
+Started GET "/api/pokemons" for 127.0.0.1 at 2023-08-03 15:21:08 -0700
+Processing by Api::PokemonsController#index as JSON
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/pokemons_controller.rb:4:in `index'
+Completed 200 OK in 25ms (Views: 13.3ms | ActiveRecord: 6.9ms | Allocations: 25784)
+
+
+Started GET "/api/pokemons/1" for 127.0.0.1 at 2023-08-03 15:23:37 -0700
+Processing by Api::PokemonsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:8:in `show'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 3.5ms | Allocations: 8460)
+
+
+Started POST "/api/pokemons?pokemon[number]&pokemon[name]&pokemon[attack]&pokemon[defense]&pokemon[poke_type]&pokemon[image_url]&pokemon[captured]" for ::1 at 2023-08-03 15:32:59 -0700
+
+SyntaxError - syntax error, unexpected ',', expecting ')'
+        ,:name       
+        ^
+/home/dominic/code/w11d4/practice-for-ch-react-pokedex-rails-backend-long-practice-main/pokedex-rails-backend/app/controllers/api/pokemons_controller.rb:27: syntax error, unexpected ',', expecting `end'
+        ,:attack     
+        ^
+/home/dominic/code/w11d4/practice-for-ch-react-pokedex-rails-backend-long-practice-main/pokedex-rails-backend/app/controllers/api/pokemons_controller.rb:28: syntax error, unexpected ',', expecting `end'
+        ,:defense    
+        ^
+/home/dominic/code/w11d4/practice-for-ch-react-pokedex-rails-backend-long-practice-main/pokedex-rails-backend/app/controllers/api/pokemons_controller.rb:29: syntax error, unexpected ',', expecting `end'
+        ,:poke_type  
+        ^
+/home/dominic/code/w11d4/practice-for-ch-react-pokedex-rails-backend-long-practice-main/pokedex-rails-backend/app/controllers/api/pokemons_controller.rb:30: syntax error, unexpected ',', expecting `end'
+        ,:image_url  
+        ^
+/home/dominic/code/w11d4/practice-for-ch-react-pokedex-rails-backend-long-practice-main/pokedex-rails-backend/app/controllers/api/pokemons_controller.rb:31: syntax error, unexpected ',', expecting `end'
+        ,:captured)
+        ^:
+  app/controllers/api/pokemons_controller.rb:26:in `'
+
+Started POST "/api/pokemons?pokemon[number]&pokemon[name]&pokemon[attack]&pokemon[defense]&pokemon[poke_type]&pokemon[image_url]&pokemon[captured]" for ::1 at 2023-08-03 15:33:54 -0700
+Processing by Api::PokemonsController#create as JSON
+  Parameters: {"pokemon"=>{"number"=>nil, "name"=>nil, "attack"=>nil, "defense"=>nil, "poke_type"=>nil, "image_url"=>nil, "captured"=>nil}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mPokemon Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mPokemon Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."number" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+Completed 200 OK in 44ms (Views: 9.1ms | ActiveRecord: 7.5ms | Allocations: 16680)
+
+
+Started POST "/api/pokemons?pokemon[number]&pokemon[name]&pokemon[attack]&pokemon[defense]&pokemon[poke_type]&pokemon[image_url]&pokemon[captured]" for ::1 at 2023-08-03 15:34:22 -0700
+Processing by Api::PokemonsController#create as JSON
+  Parameters: {"pokemon"=>{"number"=>nil, "name"=>nil, "attack"=>nil, "defense"=>nil, "poke_type"=>nil, "image_url"=>nil, "captured"=>nil}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mPokemon Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mPokemon Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."number" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+Completed 200 OK in 17ms (Views: 2.2ms | ActiveRecord: 5.7ms | Allocations: 13046)
+
+
+Started POST "/api/pokemons?pokemon[number]=150&pokemon[name]=Treecko&pokemon[attack]=50&pokemon[defense]=50&pokemon[poke_type]=grass&pokemon[image_url]=xzcvb&pokemon[captured]=false" for ::1 at 2023-08-03 15:36:57 -0700
+Processing by Api::PokemonsController#create as JSON
+  Parameters: {"pokemon"=>{"number"=>"150", "name"=>"Treecko", "attack"=>"50", "defense"=>"50", "poke_type"=>"grass", "image_url"=>"xzcvb", "captured"=>"false"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mPokemon Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."name" = $1 LIMIT $2[0m  [["name", "Treecko"], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mPokemon Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."number" = $1 LIMIT $2[0m  [["number", 150], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mPokemon Create (4.8ms)[0m  [1m[32mINSERT INTO "pokemons" ("number", "name", "attack", "defense", "poke_type", "image_url", "captured", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["number", 150], ["name", "Treecko"], ["attack", 50], ["defense", 50], ["poke_type", "grass"], ["image_url", "xzcvb"], ["captured", false], ["created_at", "2023-08-03 22:36:57.041301"], ["updated_at", "2023-08-03 22:36:57.041301"]]
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/pokemons_controller.rb:14:in `create'
+Completed 200 OK in 21ms (Views: 0.6ms | ActiveRecord: 8.5ms | Allocations: 5001)
+
+
+Started GET "/api/pokemons/126" for ::1 at 2023-08-03 15:37:50 -0700
+Processing by Api::PokemonsController#show as JSON
+  Parameters: {"id"=>"126"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:8:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 1600)
+
+
+Started PATCH "/api/pokemons/126?pokemon[number]=126" for ::1 at 2023-08-03 15:43:44 -0700
+Processing by Api::PokemonsController#update as JSON
+  Parameters: {"pokemon"=>{"number"=>"126"}, "id"=>"126"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mPokemon Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."name" = $1 AND "pokemons"."id" != $2 LIMIT $3[0m  [["name", "Treecko"], ["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mPokemon Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."number" = $1 AND "pokemons"."id" != $2 LIMIT $3[0m  [["number", 126], ["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mPokemon Update (1.9ms)[0m  [1m[33mUPDATE "pokemons" SET "number" = $1, "updated_at" = $2 WHERE "pokemons"."id" = $3[0m  [["number", 126], ["updated_at", "2023-08-03 22:43:45.001848"], ["id", 126]]
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+Completed 200 OK in 38ms (Views: 2.1ms | ActiveRecord: 9.5ms | Allocations: 13404)
+
+
+Started PATCH "/api/pokemons/126?pokemon[number]=" for ::1 at 2023-08-03 15:44:00 -0700
+Processing by Api::PokemonsController#update as JSON
+  Parameters: {"pokemon"=>{"number"=>""}, "id"=>"126"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mPokemon Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."name" = $1 AND "pokemons"."id" != $2 LIMIT $3[0m  [["name", "Treecko"], ["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mPokemon Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."number" IS NULL AND "pokemons"."id" != $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+Completed 200 OK in 17ms (Views: 0.6ms | ActiveRecord: 1.3ms | Allocations: 5758)
+
+
+Started PATCH "/api/pokemons/126?pokemon[number]=200" for ::1 at 2023-08-03 15:44:15 -0700
+Processing by Api::PokemonsController#update as JSON
+  Parameters: {"pokemon"=>{"number"=>"200"}, "id"=>"126"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mPokemon Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."name" = $1 AND "pokemons"."id" != $2 LIMIT $3[0m  [["name", "Treecko"], ["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mPokemon Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "pokemons" WHERE "pokemons"."number" = $1 AND "pokemons"."id" != $2 LIMIT $3[0m  [["number", 200], ["id", 126], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/pokemons_controller.rb:23:in `update'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 4749)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:53:48 -0700
+
+SyntaxError - syntax error, unexpected end-of-input, expecting `end':
+  app/controllers/api/pokemons_controller.rb:45:in `'
+
+Started POST "/__better_errors/2cf2c279a87bd9be/variables" for 127.0.0.1 at 2023-08-03 15:53:48 -0700
+Started GET "/api/pokemon/" for 127.0.0.1 at 2023-08-03 15:53:52 -0700
+
+SyntaxError - syntax error, unexpected end-of-input, expecting `end':
+  app/controllers/api/pokemons_controller.rb:45:in `'
+
+Started POST "/__better_errors/5ab3c16fac97b5b6/variables" for 127.0.0.1 at 2023-08-03 15:53:52 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:54:00 -0700
+
+SyntaxError - syntax error, unexpected end-of-input, expecting `end':
+  app/controllers/api/pokemons_controller.rb:45:in `'
+
+Started POST "/__better_errors/dcf3409fe3e3c13e/variables" for 127.0.0.1 at 2023-08-03 15:54:00 -0700
+Started GET "/api/pokemons" for 127.0.0.1 at 2023-08-03 15:54:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/pokemons"):
+  
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:54:08 -0700
+
+SyntaxError - syntax error, unexpected end-of-input, expecting `end':
+  app/controllers/api/pokemons_controller.rb:45:in `'
+
+Started POST "/__better_errors/2b7d24113338d884/variables" for 127.0.0.1 at 2023-08-03 15:54:08 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:54:22 -0700
+Processing by Api::PokemonsController#show as JSON
+Completed 404 Not Found in 13ms (ActiveRecord: 4.9ms | Allocations: 5661)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Pokemon without an ID:
+  app/controllers/api/pokemons_controller.rb:8:in `show'
+
+Started POST "/__better_errors/21ab283bd63f3096/variables" for 127.0.0.1 at 2023-08-03 15:54:22 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:55:05 -0700
+
+ActionController::RoutingError - uninitialized constant Api::PokemonsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::PokemonController
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/5a10076d5fbc3773/variables" for 127.0.0.1 at 2023-08-03 15:55:05 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:57:19 -0700
+
+ActionController::RoutingError - uninitialized constant Api::PokemonsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::PokemonController
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/3020a617987bf37e/variables" for 127.0.0.1 at 2023-08-03 15:57:19 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:57:19 -0700
+
+ActionController::RoutingError - uninitialized constant Api::PokemonsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::PokemonController
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/0bb103c4eea312c4/variables" for 127.0.0.1 at 2023-08-03 15:57:19 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:57:20 -0700
+
+ActionController::RoutingError - uninitialized constant Api::PokemonsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::PokemonController
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/8ae2a9e7dcd1dad7/variables" for 127.0.0.1 at 2023-08-03 15:57:20 -0700
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:57:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActionController::RoutingError - uninitialized constant Api::PokemonsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::PokemonController
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/b686bde566a469be/variables" for 127.0.0.1 at 2023-08-03 15:57:59 -0700
+Started GET "/api/pokemons" for 127.0.0.1 at 2023-08-03 15:58:05 -0700
+
+ActionController::RoutingError - uninitialized constant Api::PokemonsController
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  Api::PokemonController
+            raise MissingController.new(error.message, error.name)
+            ^^^^^:
+
+Started POST "/__better_errors/0ca4ac66507f7d73/variables" for 127.0.0.1 at 2023-08-03 15:58:05 -0700
+Started GET "/api/pokemons" for 127.0.0.1 at 2023-08-03 15:58:26 -0700
+Processing by Api::PokemonsController#index as JSON
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/pokemons_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 15.8ms | ActiveRecord: 3.1ms | Allocations: 25982)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 15:58:33 -0700
+Processing by Api::PokemonsController#show as JSON
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1077)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Pokemon without an ID:
+  app/controllers/api/pokemons_controller.rb:8:in `show'
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-08-03 15:58:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/pokemon/1"):
+  
+Started GET "/api/pokemons/1" for 127.0.0.1 at 2023-08-03 15:58:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/pokemons/1"):
+  
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-08-03 15:59:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/pokemon/1"):
+  
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-08-03 16:09:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:8:in `show'
+Completed 200 OK in 17ms (Views: 0.6ms | ActiveRecord: 3.4ms | Allocations: 13189)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:09:50 -0700
+Processing by Api::PokemonController#index as JSON
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/pokemon_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 16307)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2023-08-03 16:11:02 -0700
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:8:in `show'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 6602)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:11:08 -0700
+Processing by Api::PokemonController#index as JSON
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/api/pokemon_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 1.4ms | Allocations: 16230)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:16:29 -0700
+Processing by Api::PokemonController#index as JSON
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4788)
+
+
+
+ActionView::MissingTemplate - Missing template api/pokemon/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+Searched in::
+  app/controllers/api/pokemon_controller.rb:4:in `index'
+
+Started POST "/__better_errors/c498da7bb14492ea/variables" for 127.0.0.1 at 2023-08-03 16:16:29 -0700
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:18:22 -0700
+Processing by Api::PokemonController#index as JSON
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 813)
+
+
+
+ActionView::MissingTemplate - Missing template api/pokemon/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+Searched in::
+  app/controllers/api/pokemon_controller.rb:4:in `index'
+
+Started POST "/__better_errors/ebb0c3c94976685f/variables" for 127.0.0.1 at 2023-08-03 16:18:23 -0700
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:18:23 -0700
+Processing by Api::PokemonController#index as JSON
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 773)
+
+
+
+ActionView::MissingTemplate - Missing template api/pokemon/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+Searched in::
+  app/controllers/api/pokemon_controller.rb:4:in `index'
+
+Started POST "/__better_errors/891a17f7eaf9cf69/variables" for 127.0.0.1 at 2023-08-03 16:18:23 -0700
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:18:24 -0700
+Processing by Api::PokemonController#index as JSON
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 773)
+
+
+
+ActionView::MissingTemplate - Missing template api/pokemon/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+Searched in::
+  app/controllers/api/pokemon_controller.rb:4:in `index'
+
+Started POST "/__better_errors/826e02eb5d3b43c5/variables" for 127.0.0.1 at 2023-08-03 16:18:24 -0700
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:18:54 -0700
+Processing by Api::PokemonController#index as JSON
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 770)
+
+
+
+ActionView::MissingTemplate - Missing template api/pokemon/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+Searched in::
+  app/controllers/api/pokemon_controller.rb:4:in `index'
+
+Started POST "/__better_errors/72a23b4ff99c070e/variables" for 127.0.0.1 at 2023-08-03 16:18:54 -0700
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:18:55 -0700
+Processing by Api::PokemonController#index as JSON
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 769)
+
+
+
+ActionView::MissingTemplate - Missing template api/pokemon/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+Searched in::
+  app/controllers/api/pokemon_controller.rb:4:in `index'
+
+Started POST "/__better_errors/9a4c52cd816417e7/variables" for 127.0.0.1 at 2023-08-03 16:18:55 -0700
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:21:25 -0700
+Processing by Api::PokemonController#index as JSON
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 769)
+
+
+
+ActionView::MissingTemplate - Missing template api/pokemon/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+Searched in::
+  app/controllers/api/pokemon_controller.rb:4:in `index'
+
+Started POST "/__better_errors/9f4a803eec59ddeb/variables" for 127.0.0.1 at 2023-08-03 16:21:25 -0700
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:25:29 -0700
+Processing by Api::PokemonController#index as JSON
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 769)
+
+
+
+ActionView::MissingTemplate - Missing template api/pokemon/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+Searched in::
+  app/controllers/api/pokemon_controller.rb:4:in `index'
+
+Started POST "/__better_errors/25f9f59d6bf96dee/variables" for 127.0.0.1 at 2023-08-03 16:25:29 -0700
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):73:in `block in render_template'
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:27:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:4
+  Rendered api/pokemon/index.json.jbuilder (Duration: 10.1ms | Allocations: 13284)
+Completed 200 OK in 669ms (Views: 662.6ms | ActiveRecord: 2.6ms | Allocations: 964673)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:29:01 -0700
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:1
+  Rendered api/pokemon/index.json.jbuilder (Duration: 4.1ms | Allocations: 8265)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 9127)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:29:27 -0700
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:1
+  Rendered api/pokemon/index.json.jbuilder (Duration: 3.5ms | Allocations: 5958)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 6807)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:30:52 -0700
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:4
+  Rendered api/pokemon/index.json.jbuilder (Duration: 5.2ms | Allocations: 9743)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.5ms | Allocations: 10603)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-08-03 16:33:18 -0700
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/api/pokemon/index.json.jbuilder:4
+  Rendered api/pokemon/index.json.jbuilder (Duration: 10.9ms | Allocations: 12461)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 2.4ms | Allocations: 15512)
+
+
+Started GET "/api/pokemon/1/" for 127.0.0.1 at 2023-08-03 16:33:21 -0700
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pokemon_controller.rb:8:in `show'
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (Duration: 0.4ms | Allocations: 187)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.6ms | Allocations: 3830)
+
+
